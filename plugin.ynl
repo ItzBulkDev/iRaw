@@ -1,0 +1,14 @@
+name: TellRaw
+author: Jaydenb132
+description: A Plugin To Send 'raw' Messages (Messages with no player name)
+version: 1.0
+main: TellRaw\Main
+api: [1.4.0]
+commands:
+  raw:
+    description: "Shows all commands for TellRaw"
+    permission: raw.command
+permissions:
+  raw.command:
+    default: op
+    description: "Allow use of all TellRaw commands."
