@@ -30,14 +30,14 @@ class Main extends PluginBase implements Listener {
 					$sender->sendMessage("----------Commands For Tell Raw----------\n/raw tell - Sends a raw message to a player.\n------------------------------------------");
 				}
 					if($args[0] == "tell") {
-						$invited = $this->getServer()->getPlayerExact($args[1]);
+						$sent = $this->getServer()->getPlayerExact($args[1]);
 						if($invited->isOnline() == true) {
 						$message = $array["message"];
-						$sender-> sendMessage("------------------------------------------\n" $message "\nWas successfully sent to $invited\nYour name is not shown Unless you've entered\nYour name in the Message!\n------------------------------------------");
-						$invited->sendMessage("$message");
+						$sender-> sendMessage("------------------------------------------\n" $message "\nWas successfully sent to $sent\nYour name is not shown Unless you've entered\nYour name in the Message!\n------------------------------------------");
+						$args[1]->sendMessage("$message");
 							return true;
 						}
-						if(!$invited instanceof Player) {
+						if(!$args[1] instanceof Player) {
 							$sender->sendMessage("$invited is not online.");
 							return true;
 						} else {
