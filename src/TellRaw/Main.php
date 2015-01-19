@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener {
 		
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
 		if($sender instanceof Player) {
-			$player = $sender->getPlayer()->getName();
+			$player = $args->getPlayer()->getName();
 			if(strtolower($command->getName('raw'))) {
 				// CREATE
 				if(empty($args)) {
