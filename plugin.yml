@@ -1,14 +1,22 @@
-name: TellRaw
+name: iRaw
 author: Jaydenb132
 description: A Plugin To Send 'raw' Messages (Messages with no player name)
 version: 1.0
-main: TellRaw\Main
+main: iRaw\Main
 api: [1.4.0]
 commands:
   raw:
-    description: "Shows all commands for TellRaw"
+    description: "Shows all commands for iRaw"
     permission: raw.command
 permissions:
-  raw.command:
-    default: op
-    description: "Allow use of all TellRaw commands."
+    raw:
+        default: op
+        description: "All commands for iRaw"
+        children:
+            raw.say:
+                default: op
+                description: "Sends a raw message to a player"
+            raw.say:
+                default: op
+                description: "Broadcasts a raw message to the server"
+                                            
