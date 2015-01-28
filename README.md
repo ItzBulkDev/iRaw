@@ -1,7 +1,10 @@
-#             TellRaw
-A plugin that allows you to send 'raw' messages to other players.
+#             iRaw
+A plugin that allows you to send or say 'raw' messages.
 
-Simply use /raw tell <player>
-
-#            Intended Updates:
-- /raw say (Initializes a raw message to the entire server)
+# Commands:
+ - /raw tell <player> <message> Sends a raw message to a player
+ - /raw say <message> Broadcasts a raw message to the server
+ 
+# Warning:
+ This plugin is not finished and I am currently trying to find a way to fix the Main.php
+ If you know how you to fix this, please create a pull request
