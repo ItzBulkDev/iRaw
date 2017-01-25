@@ -33,9 +33,9 @@ class Main extends PluginBase implements Listener {
 						$sent = $this->getServer()->getPlayerExact($args[1]);
 						$message = $this->getServer()->getMessage($args[2]);
 						if($sent->isOnline() == true) {
-						$message = $array["message"];
-						$sender-> sendMessage("------------------------------------------\n" .  $message . "\nWas successfully sent to " . $sent . "\nYour name is not shown Unless you've entered\nYour name in the Message!\n------------------------------------------");
-						$args[1]->getPlayerExact->sendMessage("$message");
+							$message = $array["message"];
+							$sender-> sendMessage("------------------------------------------\n" .  $message . "\nWas successfully sent to " . $sent . "\nYour name is not shown Unless you've entered\nYour name in the Message!\n------------------------------------------");
+							$args[1]->getPlayerExact->sendMessage("$message");
 							return true;
 						}
 						if(!$args[1] instanceof Player) {
@@ -44,19 +44,21 @@ class Main extends PluginBase implements Listener {
 						}
 						if(!$args[1] = 0) {
 							$sender->sendMessage("iRaw] You Must Enter A Message!");
-							$sender->sendMessage("Usage: /raw tell <player> <message>")
-						} else {
+							$sender->sendMessage("Usage: /raw tell <player> <message>");
+						}
+					        else {
 							$sender->sendMessage("iRaw] Usage: /raw tell <player> <message>");
 						}
 					}
 					if(args[0] == "say") {
 						$message = $this->getServer()->getMessage($args[1]);
-		                $sender->getServer()->broadcastMessage($message);
+		                		$sender->getServer()->broadcastMessage($message);
 					}
-						if(!$args[1] = 0) {
-							$sender->sendMessage("iRaw] You Must Enter A Message!");
-							$sender->sendMessage("Usage: /raw say <message>")
-					} else {
+					if(!$args[1] = 0) {
+						$sender->sendMessage("iRaw] You Must Enter A Message!");
+						$sender->sendMessage("Usage: /raw say <message>");
+					}
+					else {
 						$sender->sendMessage("iRaw] Usage: /raw say <message>");
 					}
 						   
