@@ -2,7 +2,7 @@ name: iRaw
 author: Jaydenb132
 description: A Plugin To Send 'raw' Messages (Messages with no player name)
 version: 1.0
-main: iRaw\Main
+main: TellRaw\Main
 api: [1.4.0]
 commands:
   raw:
