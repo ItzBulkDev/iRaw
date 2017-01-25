@@ -34,7 +34,7 @@ class Main extends PluginBase implements Listener {
 						$message = $this->getServer()->getMessage($args[2]);
 						if($sent->isOnline() == true) {
 						$message = $array["message"];
-						$sender-> sendMessage("------------------------------------------\n" $message "\nWas successfully sent to $sent\nYour name is not shown Unless you've entered\nYour name in the Message!\n------------------------------------------");
+						$sender-> sendMessage("------------------------------------------\n" .  $message . "\nWas successfully sent to " . $sent . "\nYour name is not shown Unless you've entered\nYour name in the Message!\n------------------------------------------");
 						$args[1]->getPlayerExact->sendMessage("$message");
 							return true;
 						}
