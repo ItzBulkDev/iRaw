@@ -20,6 +20,16 @@ use pocketmine\event\player\PlayerJoinEvent;
 
 
 class Main extends PluginBase implements Listener {
+	public function onLoad() {
+		$this->getLogger()->info("iRaw Has Now been Loaded!");
+		$this->getLogger()->info("Thanks to Atticus Zambrana for fixing this plugin!");
+	}
+	public function onEnable() {
+		$this->getLogger()->info("iRaw Has Now been Enabled!");
+	}
+	public function onDisable() {
+		$this->getLogger()->info("iRaw Has Now been Disabled!");
+	}
 		
 	public function onCommand(CommandSender $sender, Command $command, $label, array $args) {
 		if($sender instanceof Player) {
@@ -61,5 +71,7 @@ class Main extends PluginBase implements Listener {
 					else {
 						$sender->sendMessage("iRaw] Usage: /raw say <message>");
 					}
-						   
+			}
 		}
+	}
+}
