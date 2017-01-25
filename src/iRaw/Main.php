@@ -60,7 +60,7 @@ class Main extends PluginBase implements Listener {
 							$sender->sendMessage("iRaw] Usage: /raw tell <player> <message>");
 						}
 					}
-					if(args[0] == "say") {
+					if($args[0] == "say") {
 						$message = $this->getServer()->getMessage($args[1]);
 		                		$sender->getServer()->broadcastMessage($message);
 					}
